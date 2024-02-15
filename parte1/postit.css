@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #666666;
+  padding: 35px;
+}
+
+h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+p {
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: 400;
+}
+
+#firstcontainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+#firstcontainer div {
+  border: solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 12px 5px 2px, inset 0px -31px 21px -4px rgba(0, 0, 0, 0.1);
+  padding: 65px;
+}
+
+#secondcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#secondcontainer div {
+  border: solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 12px 5px 2px, inset 0px -31px 21px -4px rgba(0, 0, 0, 0.1);
+  padding: 65px;
+}
+
+.tsk1 {
+  background-color: #f3f4c0;
+  transform: rotate(358deg);
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+.tsk2 {
+  background-color: #c8f8c9;
+  transform: rotate(8deg);
+}
+.tsk3 {
+  background-color: #c3c4ed;
+  transform: rotate(352deg);
+}
+.tsk4 {
+  background-color: #c8f8c9;
+  transform: rotate(8deg);
+}
+.tsk5 {
+  background-color: #f3f4c0;
+  transform: rotate(358deg);
+}
+.tsk6 {
+  background-color: #c3c4ed;
+  transform: rotate(352deg);
+}
+.tsk7 {
+  background-color: #f3f4c0;
+  transform: rotate(358deg);
+}
+.tsk8 {
+  background-color: #c8f8c9;
+  transform: rotate(8deg);
+}
+
+@keyframes showDivs {
+  0% {
+    opacity: 0;
+    translate: 0 -20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+#firstcontainer div,
+#secondcontainer div {
+  animation: showDivs 0.5s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+#firstcontainer div:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#secondcontainer div:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+  cursor: pointer;
+}
+#firstcontainer div:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+#firstcontainer div:nth-child(2) {
+  animation-delay: 1s;
+}
+
+#firstcontainer div:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+#firstcontainer div:nth-child(4) {
+  animation-delay: 2s;
+}
+
+#secondcontainer div:nth-child(1) {
+  animation-delay: 2.5s;
+}
+
+#secondcontainer div:nth-child(2) {
+  animation-delay: 3s;
+}
+
+#secondcontainer div:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+#secondcontainer div:nth-child(4) {
+  animation-delay: 4s;
+}
